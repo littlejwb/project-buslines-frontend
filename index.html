@@ -1,71 +1,65 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Sobre o Tarifa Zero</a></li>
-                <li><a href="#">Mapas das rotas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1>Horários de ônibus</h1>
-    <div>
-        <form>
-            <h2>Selecione a linha: </h2>
-            <select id="departure">
-                <option disabled selected>Saída</option>
-                <option value="Centro">Centro</option>
-                <option value="Ambrósio">Ambrósio</option>
-                <option value="Campo D'una">Campo D'una</option>
-                <option value="Costa do Macacu">Costa do Macacu</option>
-                <option value="Gamboa">Gamboa</option>
-                <option value="Ouvidor">Ouvidor</option>
-                <option value="Rosa">Rosa</option>
-                <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
-            </select>
-            <select id="endpoint">
-                <option disabled selected>Ponto final</option>
-                <option value="Centro">Centro</option>
-                <option value="Ambrósio">Ambrósio</option>
-                <option value="Campo D'una">Campo D'una</option>
-                <option value="Costa do Macacu">Costa do Macacu</option>
-                <option value="Gamboa">Gamboa</option>
-                <option value="Ouvidor">Ouvidor</option>
-                <option value="Rosa">Rosa</option>
-                <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
-            </select>
-            <button type="button" onclick="buscarHorarios()">Buscar horários</button>
-        </form>
-
-        <table id="tabela">
-            <thead>
-                <tr>
-                    <th>Origem</th>
-                    <th>Destino</th>
-                    <th>Horário</th>
-                    <th>Observação</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-
-        <script>
-            function buscarHorarios() {
-                var tabela = document.getElementById("tabela");
-                tabela.style.display = "block";
-            }
-        </script>
-    </div>
-</body>
+    <head>
+        <title>Horários de ônibus - Garopaba</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Tarifa Zero</a></li>
+                    <li><a href="mapas.html">Mapas das rotas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Horários de ônibus</h1>
+        <div>
+            <form>
+                <h2>Selecione a linha: </h2>
+                <select id="departure">
+                    <option disabled selected>Saída</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Ambrósio">Ambrósio</option>
+                    <option value="Campo D'una">Campo D'una</option>
+                    <option value="Costa do Macacu">Costa do Macacu</option>
+                    <option value="Gamboa">Gamboa</option>
+                    <option value="Ouvidor">Ouvidor</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
+                </select>
+                <select id="endpoint">
+                    <option disabled selected>Ponto final</option>
+                    <option value="Centro">Centro</option>
+                    <option value="Ambrósio">Ambrósio</option>
+                    <option value="Campo D'una">Campo D'una</option>
+                    <option value="Costa do Macacu">Costa do Macacu</option>
+                    <option value="Gamboa">Gamboa</option>
+                    <option value="Ouvidor">Ouvidor</option>
+                    <option value="Rosa">Rosa</option>
+                    <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
+                </select>
+                <button type="button" onclick="buscarHorarios()">Buscar horários</button>
+            </form>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Horário</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <script>
+                function buscarHorarios() {
+                    var tabela = document.getElementById("tabela");
+                    tabela.style.display = "block";
+                }
+            </script>
+        </div>
+    </body>
 
 </html>
