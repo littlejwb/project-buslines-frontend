@@ -43,7 +43,7 @@ h1 {
   font-family: ParabolicaTest;
   color: rgb(8, 8, 8);
   text-align: center;
-  font-size: 65px;
+  font-size: 40px;
 }
 
 form {
@@ -72,12 +72,17 @@ body {
 .rectangular-block {
   height: 200px;
   width: 50%;
-  background-color: rgb(172, 160, 51);
+  background-color: rgb(196, 183, 71);
   position: relative;
 }
 
-.Logo{
-  float: right;
-  width: 60%;
-  margin-left: 10px;
+.logo{
+  float:right;
+  width: 30%;
+  margin-top: -110px;
+  margin-right: 80px;
+}
+
+.tittle{
+  padding: 65px;
 }
