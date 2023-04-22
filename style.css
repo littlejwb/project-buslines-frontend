@@ -6,6 +6,7 @@
   font-family: ParabolicaTest;
   src: url(D:\valte\Documents\Fontes\ParabolicaTest-Black-BF643e085a31d57.otf);
 }
+
 .header {
   background: #7e7d7d;
   width: 100%;
@@ -16,7 +17,8 @@ ul {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #e4e2ee;
+  background-color: #f3f3f3;
+  border: 1px solid#e7e7e7;
   overflow: hidden;
   text-align: center;
 }
@@ -28,7 +30,7 @@ li {
 
 a {
   display: block;
-  color: rgb(8, 8, 8);
+  color: #666;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -36,7 +38,7 @@ a {
 }
   
 a:hover {
-  background-color: rgb(145, 142, 142);
+  background-color: rgba(204, 203, 203, 0.582);
 }
   
 h1 {
