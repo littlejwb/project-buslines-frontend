@@ -35,6 +35,7 @@ a {
   padding: 10px;
   text-decoration: none;
   font-size: 15px;
+  font-weight: bold;
 }
   
 a:hover {
@@ -55,7 +56,7 @@ form {
 body {
   width: 100%;
   margin: 0;
-  font-family: Helvetica;
+  font-family: 'Rubik', sans-serif;
 }
 
 .form-box {
