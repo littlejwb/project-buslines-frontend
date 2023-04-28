@@ -72,13 +72,6 @@ body {
   left: 100px;
 }
 
-.rectangular-block {
-  height: 200px;
-  width: 50%;
-  background-color: rgb(196, 183, 71);
-  position: relative;
-}
-
 .logo {
   float: right;
   width: 20%;
