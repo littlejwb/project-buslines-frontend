@@ -9,14 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="file.js"></script>
+</head>
 </head>
     <body>
-        <div class="header">
+        <div class="header" id="topNav">
             <nav>
                 <ul>
-                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html" class="active">Início</a></li>
                     <li><a href="sobre.html">Sobre o Tarifa Zero</a></li>
                     <li><a href="mapas.html">Mapas das rotas</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                        <i class="fa-regular fa-bars"></i>
+                    </a>
                 </ul>
             </nav>
         </div>
