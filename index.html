@@ -9,22 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
-    <script src="file.js"></script>
-</head>
 </head>
     <body>
-        <div class="header" id="topNav">
-            <nav>
+        <nav class="nav">
+            <div class="header" id="header">
                 <ul>
                     <li><a href="index.html" class="active">Início</a></li>
                     <li><a href="sobre.html">Sobre o Tarifa Zero</a></li>
                     <li><a href="mapas.html">Mapas das rotas</a></li>
-                    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-                        <i class="fa-regular fa-bars"></i>
-                    </a>
                 </ul>
-            </nav>
-        </div>
+            </div>
+            <div class="media_button">
+                <button class="main_media_button" id="mediaButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
         <div class="title">
             <h1>
                 <p class="name">Horários de ônibus.</p>
@@ -84,5 +86,6 @@
                 }
             </script>
         </div>
+        <script src="file.js"></script>
     </body>
 </html>
