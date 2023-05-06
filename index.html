@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horários de ônibus - Garopaba</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+    crossorigin="anonymous"></script>
 </head>
     <body>
         <nav class="nav">
@@ -34,9 +36,7 @@
             <img src="D:\valte\Pictures\LogoTarifaZero2-removebg-preview.png" alt="Logo Tarifa Zero">
         </div>
         <div class="form-box">
-            <form>
                 <h2 class="subtitle">
-                    <!-- <img src="D:\valte\Downloads\icons8-address-24.png" alt="ícone"> -->
                     Selecione a linha: 
                 </h2>
                 <select id="departure">
@@ -61,27 +61,16 @@
                     <option value="Rosa">Rosa</option>
                     <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
                 </select>
-                <button type="button" onclick="buscarHorarios()">Buscar horários</button>
-            </form>
-            <table id="tabela">
-                <thead>
-                    <tr>
-                        <th>Origem</th>
-                        <th>Destino</th>
-                        <th>Horário</th>
-                        <th>Observação</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-            <script>
-                function buscarHorarios() {
-                    var tabela = document.getElementById("tabela");
-                    tabela.style.display = "block";
-                }
-            </script>
-        </div>
+                <button type="button" onclick="getData()">Buscar horários</button>
+                <table id="tabela" class="hidden">
+                    <thead id="table-head">
+
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                  </table>
+                </div>
         <script src="file.js"></script>
     </body>
 </html>
