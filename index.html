@@ -15,6 +15,7 @@
                     <li><a href="mapas.html">Mapas das rotas</a></li>
                 </ul>
             </div>
+
             <div class="media_button">
                 <button class="main_media_button" id="mediaButton">
                     <span></span>
@@ -24,19 +25,25 @@
             </div>
         </nav>
         <div class="title">
+
             <h1>
                 <p class="name">Horários de ônibus.</p>
                 <p class="cityname">Garopaba.</p>
                 <hr>
             </h1>
+
         </div>
-        <div class="logo">        
+        <div class="logo">     
+
             <img src="D:\valte\Pictures\LogoTarifaZero2-removebg-preview.png" alt="Logo Tarifa Zero">
+
         </div>
         <div class="form-box">
+
                 <h2 class="subtitle">
                     Selecione a linha: 
                 </h2>
+
                 <select id="departure">
                     <option disabled selected>Saída</option>
                     <option value="Centro">Centro</option>
@@ -48,6 +55,7 @@
                     <option value="Rosa">Rosa</option>
                     <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
                 </select>
+
                 <select id="endpoint">
                     <option disabled selected>Ponto final</option>
                     <option value="Centro">Centro</option>
@@ -59,16 +67,20 @@
                     <option value="Rosa">Rosa</option>
                     <option value="Rosa(Ressacada)">Rosa(Ressacada)</option>
                 </select>
+
                 <button type="button" onclick="getData()">Buscar horários</button>
-                <table id="tabela" class="hidden">
-                    <thead id="table-head">
 
-                    </thead>
-                    <tbody id="table-body">
+                <div class="container">
+                    <br>
+                    <table id="tabela" class="hidden">
+                        <thead id="table-head">
+                        </thead>
+                        <tbody id="table-body">
 
-                    </tbody>
-                  </table>
+                        </tbody>
+                    </table>
                 </div>
+        </div>
         <script src="file.js"></script>
     </body>
 </html>
