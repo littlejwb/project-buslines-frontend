@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 .hidden {
   display: none;
 } 
@@ -119,7 +121,6 @@ a:hover {
 }
 
 .form-box {
-  margin-left: 30px;
   background: rgb(225, 225, 226);
   border-radius: 5px;
   padding: 20px;
@@ -160,12 +161,31 @@ a:hover {
   }
 
 .subtitle {
-  font-family: "Noi Grotesk", sans-serif;
   line-height: 95%;
   letter-spacing: -.02em;
   font-weight: 400;
   font-size: 32px;
 }
+
+.container {
+  padding-top: 15px;
+}
+
+table {
+  background-color: rgba(250, 249, 249, 0.8);
+  width: 75%;
+  font-family: 'Lora', sans-serif;
+}
+
+td {
+  padding-left: 10px;
+}
+
+th {
+  border-bottom: 1px solid #c2c1c1;
+  padding: 5px;
+}
+
 
 @media (max-width: 680px) {
   .name {
