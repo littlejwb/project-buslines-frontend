@@ -131,11 +131,11 @@ a:hover {
   left: 100px;
 }
 
-.logo {
+img {
   float: right;
   width: 20%;
-  margin-top: -125px;
-  margin-right: 110px;
+  margin-top: -120px;
+  margin-right: 120px;
 }
 
 .title {
@@ -208,6 +208,14 @@ th {
    .cityname {
     font-size: 30px;
     text-align: left;
+  }
+
+  img {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    width: 30%;
   }
 }
 
