@@ -10,7 +10,7 @@ mediaButton.onclick = function(){
 function getData() {
   var saida = document.getElementById("departure").value;
   var pontoFinal = document.getElementById("endpoint").value;
-  var url = "http://localhost:8080/lines/search/" + saida + "/" + pontoFinal;
+  var url = "http://localhost:8080/lines/" + saida + "/" + pontoFinal;
 
   fetch(url)
     .then(response => response.json())
